@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "type": "module",
+"scripts": {
+  "start": "node app.js",
+  "dev": "nodemon app.js"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CanelaLedezma/Middlewares-JWT.git"
@@ -13,9 +15,19 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/CanelaLedezma/Middlewares-JWT/issues"
   },
-  "homepage": "https://github.com/CanelaLedezma/Middlewares-JWT#readme"
+  "homepage": "https://github.com/CanelaLedezma/Middlewares-JWT#readme",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "pg": "^8.22.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
 }
